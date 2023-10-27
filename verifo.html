@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virifo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="virifo-logo.png" alt="Virifo Logo">
+            <h1>Virifo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a id="loginButton" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // Get a reference to the "Login" button
+        const loginButton = document.getElementById("loginButton");
+    
+        // Add a click event listener to the button
+        loginButton.addEventListener("click", function () {
+            // Navigate to the "Welcome" (profile) page
+            document.getElementById("login").style.display = "none"; // Hide the login section
+            document.getElementById("profile").style.display = "block"; // Show the profile section
+        });
+    </script>
+    
+    
+    <main>
+        <!-- Login Page -->
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                
+                <button type="submit">Log In</button>
+            </form>
+        </section>
+        
+        <!-- Signup Page -->
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age">
+                
+                <label for="file">Upload File</label>
+                <input type="file" id="file" name="file">
+                
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id">
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        
+        <!-- Profile Page -->
+        <section id="profile">
+            <h2>Welcome, [Username]</h2>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#update">Update Records</a></li>
+                    <li><a href="#view">View Information</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <!-- Admin Page -->
+        <section id="admin">
+            <h2>Welcome, Admin</h2>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#search">Search Customer</a></li>
+                    <li><a href="#view">View Information</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>
