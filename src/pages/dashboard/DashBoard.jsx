@@ -35,6 +35,7 @@ import { calculateAllLoans, calculateAllPayments } from "../../slices/functionSl
 import LineChart from "../../component/LineChart";
 import YearlyBarChart from "../../component/YearlyBarChart";
 
+
 const DashBoard = () => {
   const state = useSelector((state) => state.loanReducer);
   const dispatch = useDispatch();

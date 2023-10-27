@@ -6,6 +6,7 @@ import Loans from "./pages/Loans";
 import Payment from "./pages/Payment";
 import Calendar from "./pages/Calendar";
 import CreditScore from "./pages/CreditScore";
+import Oursignup from "./pages/Oursignup"
 import {
   Route,
   createBrowserRouter,
@@ -56,7 +57,8 @@ function App() {
           path="signin"
           element={isAuthenticated ? <Navigate to="/" /> : <SignInForm />}
         />
-        <Route exact path="signup" element={<SignUpForm />} />
+        {/* <Route exact path="signup" element={<SignUpForm />} /> */}
+        <Route exact path="signup" element={<Oursignup />} />
       </>
     )
   );

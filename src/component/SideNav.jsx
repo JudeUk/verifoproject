@@ -26,35 +26,35 @@ import Logo from "../assets/png/logo-no-background.png";
 
 const navItems = [
   {
-    title: "Dashboard",
+    title: "MY RECORDS",
     path: "/",
     icon: <Icon as={RxDashboard} color="blue.500" />,
     color: "blue.500",
   },
   {
-    title: "Payments",
+    title: "UPDATE RECORDS",
     path: "payment",
     icon: <Icon as={MdOutlinePayment} color="orange.300" />,
     color: "orange.300",
   },
-  {
-    title: "Loans",
-    path: "loans",
-    icon: <FcCalculator />,
-    color: "green.400",
-  },
-  {
-    title: "Calendar",
-    path: "calendar",
-    icon: <Icon as={BsCalendar3} color="red.400" />,
-    color: "red.400",
-  },
-  {
-    title: "Credit Score",
-    path: "creditScore",
-    icon: <Icon as={MdCreditScore} color="cyan.400" />,
-    color: "cyan.400",
-  },
+  // {
+  //   title: "Loans",
+  //   path: "loans",
+  //   icon: <FcCalculator />,
+  //   color: "green.400",
+  // },
+  // {
+  //   title: "Calendar",
+  //   path: "calendar",
+  //   icon: <Icon as={BsCalendar3} color="red.400" />,
+  //   color: "red.400",
+  // },
+  // {
+  //   title: "Credit Score",
+  //   path: "creditScore",
+  //   icon: <Icon as={MdCreditScore} color="cyan.400" />,
+  //   color: "cyan.400",
+  // },
 ];
 
 function SideNav({isOpen, onClose}) {
