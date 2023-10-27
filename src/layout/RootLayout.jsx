@@ -90,16 +90,16 @@ const Navigation = ({ onOpen }) => {
   );
 };
 
-function RootLayout({ isAuthenticated }) {
+function RootLayout({  }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <Flex py={2} ps={4}>
-        {isAuthenticated && <SideNav isOpen={isOpen} onClose={onClose} />}
+         <SideNav isOpen={isOpen} onClose={onClose} />
         <Box w={{ base: "full", xl: "80%" }} ms="auto" pe={5}>
           <Navigation onOpen={onOpen} />
-          {isAuthenticated && <Outlet />}
+          <Outlet />
         </Box>
       </Flex>
     </>
